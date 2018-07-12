@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
                 this.sit,
                 this.push,
             ]
-            this.http.post('http://localhost:8080/dailypost', payload)
+            this.http.post('/dailypost', payload)
                 .subscribe(data => console.log(data))
         }
         console.log('nu uh')
